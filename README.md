@@ -9,6 +9,11 @@ One Paragraph of project description goes here
    * [1 - How to setup Git](#1---how-to-setup-git)
       * [1.1 - How to start?](#11---how-to-start)
       * [1.2 - How to work with git?](#12---how-to-work-with-git)
+    
+   * [2 - How to code in Java](#1---how-to-setup-git)
+   * [3 - Project](#1---how-to-setup-git)
+      * [3.1 - Class model:](#12---how-to-work-with-git)
+      * [3.2 - Class Implementation:](#12---how-to-work-with-git)
 
 
 ## 1 - How to setup Git
@@ -38,25 +43,15 @@ Now, we have an active repository to work with.
 
 Once you are logged into a repository, you can create branches
 
-### Break down into end to end tests
 
-Explain what these tests test and why
+## 2 - How to setup Git
 
-```
-Give an example
-```
+## 3 - Project
 
-### And coding style tests
+### 3.1 - Class model:
 
-Explain what these tests test and why
+### 3.2 - Class Implementation:
 
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
@@ -64,13 +59,6 @@ Add additional notes about how to deploy this on a live system
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
@@ -78,9 +66,6 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
