@@ -6,10 +6,9 @@ This repository is intended to help OO Labs' management,
 One Paragraph of project description goes here
 
 # Table of Contents  
-[1 - How to setup Git](## 1 - How to setup Git)  
-[Emphasis](#emphasis)  
-...snip...    
-<a name="headers"/>
+-[1 - How to setup Git](#1-How-to-setup-Git)  
+  -[1.1 - How to start?](#1.1-How-to-start?)    
+
 
 
 ## 1 - How to setup Git
