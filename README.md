@@ -7,8 +7,7 @@ One Paragraph of project description goes here
 
 # Table of Contents  
    * [1 - How to setup Git](#1---how-to-setup-git)
-   * [Usage](#usage)
-      * [STDIN](#stdin)
+      * [1.1 - How to start?](#stdin)
 
 
 ## 1 - How to setup Git
