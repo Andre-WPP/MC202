@@ -6,7 +6,7 @@ This repository is intended to help OO Labs' management,
 One Paragraph of project description goes here
 
 # Table of Contents  
-   * [1 - How to setup Git]()
+   * [1 - How to setup Git](#1---how-to-setup-git)
    * [Usage](#usage)
       * [STDIN](#stdin)
 
