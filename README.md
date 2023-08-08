@@ -44,7 +44,7 @@ Now, we have an active repository to work with.
 Once you are logged into a repository, you can create branches
 
 
-## 2 - How to setup Git
+## 2 - How to code in Java
 
 ## 3 - Project
 
