@@ -10,10 +10,10 @@ One Paragraph of project description goes here
       * [1.1 - How to start?](#11---how-to-start)
       * [1.2 - How to work with git?](#12---how-to-work-with-git)
     
-   * [2 - How to code in Java](#1---how-to-setup-git)
-   * [3 - Project](#1---how-to-setup-git)
-      * [3.1 - Class model:](#12---how-to-work-with-git)
-      * [3.2 - Class Implementation:](#12---how-to-work-with-git)
+   * [2 - How to code in Java](#2---how-to-code-in-java)
+   * [3 - Project](#3---project)
+      * [3.1 - Class model:](#31---class-model)
+      * [3.2 - Class Implementation:](#32---class-implementation)
 
 
 ## 1 - How to setup Git
