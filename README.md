@@ -5,11 +5,19 @@ This repository is intended to help OO Labs' management,
 
 One Paragraph of project description goes here
 
-## 1- How to setup Git
+# Table of Contents  
+[1 - How to setup Git](## 1 - How to setup Git)  
+[Emphasis](#emphasis)  
+...snip...    
+<a name="headers"/>
+
+
+## 1 - How to setup Git
+*Nice readme file cheatsheet:* <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>
 
 The discipline decided to use GitHub as the main repository to manage lab's deliveries. Therefore, below you will find the basic git code to proceed with activities.
 
-### How to start?
+### 1.1 - How to start?
 
 First, you need to create a git repository (this can be done either via github website or via command line with the following code:
 
@@ -23,17 +31,13 @@ If you already have a git repository, you can clone it locally using the followi
 git clone https://github.com/Andre-WPP/MC202.git
 ```
 
-And repeat
+Now, we have an active repository to work with.
 
-```
-until finished
-```
 
-End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
+### 1.2 - How to work with git?
 
-Explain how to run the automated tests for this system
+Once you are logged into a repository, you can create branches
 
 ### Break down into end to end tests
 
