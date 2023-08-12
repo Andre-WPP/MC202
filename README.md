@@ -9,7 +9,7 @@ One Paragraph of project description goes here
    * [1 - How to setup Git](#1---how-to-setup-git)
       * [1.1 - How to start?](#11---how-to-start)
       * [1.2 - How to work with git?](#12---how-to-work-with-git)
-      * [1.3 - Special cases: multiple branches.](#13---how-to-work-with-git)
+      * [1.3 - Special cases: multiple branches.](#13---special-cases-multiple-branches)
     
    * [2 - How to code in Java](#2---how-to-code-in-java)
    * [3 - Project](#3---project)
@@ -73,6 +73,25 @@ git push
 ### 1.3 - Special cases: multiple branches.
 
 ## 2 - How to code in Java
+
+In java, you should create a folder structure like that:
+
+project-folder
+|_src
+  |_package1
+    |_class11.java
+    |_class12.java
+  |_package2
+    |_class21.java
+    |_class22.java
+  |_main.java
+|_lib
+
+A class must have 4 elements:
+*1-Attributes:* variables that defines the state of an object
+*2-Constructor:* special method to instatiate objects and create their first state
+*3-Getters/Setters:* special methods to set/reset an object's attribute or use their values in the scope of the object's instantiation
+*4-Methods:* whatever functionality you want to give to your class
 
 ## 3 - Project
 
