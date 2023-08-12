@@ -1,25 +1,30 @@
 package assets;
 
-import java.time.LocalDateTime;
-
 public class Computer {
    //Class' attributes ======================================================================================
-
+    private String brand;
 
 
     //Class' constructor =====================================================================================
+    public Computer(String brand){
+        this.brand = brand;
 
+    }
 
 
     //Getters and Setters ====================================================================================
-    
+    public void set_brand (String brand){
+        this.brand = brand;
+
+    }
+
+    public String get_brand(){
+        return brand;
+
+    }
 
 
     //Methods=================================================================================================
-    //Generates the id for object
-    private String generateId(){
-        final LocalDateTime apointinTime = java.time.LocalDateTime.now();
-        return apointinTime.toString();
-    }
+
     
 }

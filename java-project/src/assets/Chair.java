@@ -1,25 +1,26 @@
 package assets;
 
-import java.time.LocalDateTime;
-
 public class Chair {
    //Class' attributes ======================================================================================
-
-
-
+    private float maxWeight;
+    
     //Class' constructor =====================================================================================
-
+    public Chair(float maxWeight){
+        this.maxWeight = maxWeight;
+    }
 
 
     //Getters and Setters ====================================================================================
-    
+    public void set_maxWeight(float maxWeight){
+        this.maxWeight = maxWeight;
+    }
+
+    public float get_maxWeight(){
+        return maxWeight;
+    }
+
 
 
     //Methods=================================================================================================
-    //Generates the id for object
-    private String generateId(){
-        final LocalDateTime apointinTime = java.time.LocalDateTime.now();
-        return apointinTime.toString();
-    }
-    
+
 }
