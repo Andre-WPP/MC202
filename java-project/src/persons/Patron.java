@@ -5,7 +5,7 @@ import action.Incident;
 import action.Subscription;
 import java.time.LocalDate;
 
-public class Patron {
+public class Patron extends Person{
    //Class' attributes ======================================================================================
    private int numberBorrow;
    private Borrow borrow[];
@@ -18,7 +18,26 @@ public class Patron {
 
 
     //Class' constructor =====================================================================================
-    public Patron(int numberBorrow, Borrow borrow[], int numberIncident, Incident incident[], LocalDate registeredOn, boolean blocked, Subscription subscription, CreditCard card[]){
+    public Patron(
+        String documentType, 
+        String docNumber, 
+        String cel, 
+        String email, 
+        String password, 
+        String name, 
+        String lastName, 
+        char gender, 
+        String occupation, 
+        int numberBorrow, 
+        Borrow borrow[], 
+        int numberIncident, 
+        Incident incident[], 
+        LocalDate registeredOn, 
+        boolean blocked, 
+        Subscription subscription, 
+        CreditCard card[]){
+            
+        super(documentType, docNumber, cel, email, password, name, lastName, gender, occupation);
         this.numberBorrow = numberBorrow;
         this.borrow = borrow;
         this.numberIncident = numberIncident;
