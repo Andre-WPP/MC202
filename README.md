@@ -9,6 +9,7 @@ One Paragraph of project description goes here
    * [1 - How to setup Git](#1---how-to-setup-git)
       * [1.1 - How to start?](#11---how-to-start)
       * [1.2 - How to work with git?](#12---how-to-work-with-git)
+      * [1.3 - Special cases: multiple branches.](#13---how-to-work-with-git)
     
    * [2 - How to code in Java](#2---how-to-code-in-java)
    * [3 - Project](#3---project)
@@ -43,6 +44,33 @@ Now, we have an active repository to work with.
 
 Once you are logged into a repository, you can create branches
 
+```
+git branch <name>
+```
+then, you can select the branch to start working in it. The default branch is called 'main':
+
+```
+git checkout <name>
+``` 
+
+once you've made some change in your code, you can commit these changes locally. First you should select the specific files you want to commit using
+
+```
+git add <name>  or git add.
+```
+then, you may commit them using:
+
+```
+git commit -m 'A description of what has been changed'
+```
+
+Last, but not least, you can send the local updates to github server so all team members can collaborate, using:
+
+```
+git push
+``` 
+
+### 1.3 - Special cases: multiple branches.
 
 ## 2 - How to code in Java
 
