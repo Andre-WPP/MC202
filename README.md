@@ -1,4 +1,4 @@
-# MC202 - LABs
+# MC322 - LABs
 This repository is intended to help OO Labs' management,
 
 # LIBRARY MANAGEMENT SYSTEM
