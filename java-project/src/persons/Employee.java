@@ -1,10 +1,10 @@
 package persons;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import persons.Person;
+//import persons.Person;
 
-public class Employee extends Person{
+//extends Person
+public class Employee {
    //Class' attributes ======================================================================================
     private String level;
     private float salary;
@@ -16,7 +16,7 @@ public class Employee extends Person{
 
     //Class' constructor =====================================================================================
     public Employee(String level, float salary, LocalDate startedOn, LocalDate lastVaccation, LocalDate firstHalfSalary, LocalDate secondHalfSalary){
-        super();
+        //super();
         this.level = level;
         this.salary = salary;
         this.startedOn = startedOn;
@@ -29,14 +29,47 @@ public class Employee extends Person{
 
 
     //Getters and Setters ====================================================================================
-    
 
+        public void set_level(String level){
+            this.level = level;
+        }
+        public void set_salary(float salary){
+            this.salary = salary;
+        }
+        public void set_lastVaccation(LocalDate lastVaccation){
+            this.lastVaccation = lastVaccation;
+        }
+        public void set_firstHalfSalary(LocalDate firstHalfSalary){
+            this.firstHalfSalary = firstHalfSalary;
+        }
+        public void set_secondHalfSalary(LocalDate secondHalfSalary){
+            this.secondHalfSalary = secondHalfSalary;
+        }
+
+
+        public String get_level(){
+            return level;
+        }
+        public float get_salary(){
+            return salary;
+        }
+
+        public LocalDate get_startedOn(){
+            return startedOn;
+        }
+
+        public LocalDate get_lastVaccation(){
+            return lastVaccation;
+        }
+        public LocalDate get_firstHalfSalary(){
+            return firstHalfSalary;
+        }
+        public LocalDate get_secondHalfSalary(){
+            return secondHalfSalary;
+        }
 
     //Methods=================================================================================================
-    //Generates the id for object
-    private String generateId(){
-        final LocalDateTime apointinTime = java.time.LocalDateTime.now();
-        return apointinTime.toString();
-    }
+
+
     
 }
