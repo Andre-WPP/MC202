@@ -91,10 +91,10 @@ project-folder
 ```
 
 A class must have 4 elements:
-  [**1-Attributes:** variables that defines the state of an object]
-  [**2-Constructor:** special method to instatiate objects and create their first state]
-  [**3-Getters/Setters:** special methods to set/reset an object's attribute or use their values in the scope of the object's instantiation]
-  [**4-Methods:** whatever functionality you want to give to your class]
+  *1[**1-Attributes:** variables that defines the state of an object]
+  *[**2-Constructor:** special method to instatiate objects and create their first state]
+  *[**3-Getters/Setters:** special methods to set/reset an object's attribute or use their values in the scope of the object's instantiation]
+  *[**4-Methods:** whatever functionality you want to give to your class]
 
 ## 3 - Project
 
