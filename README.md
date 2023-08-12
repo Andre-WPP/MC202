@@ -49,6 +49,8 @@ Once you are logged into a repository, you can create branches
 ## 3 - Project
 
 ### 3.1 - Class model:
+![image](https://github.com/Andre-WPP/MC322/assets/141690925/ccae4914-66f7-494a-8d82-82210164e1a8)
+
 
 ### 3.2 - Class Implementation:
 
