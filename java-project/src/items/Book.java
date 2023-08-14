@@ -1,8 +1,9 @@
 package items;
 
 import java.time.LocalDate;
+import assets.Asset;
 
-public class Book {
+public class Book extends Asset {
    //Class' attributes ======================================================================================
     private String title;
     private String subTitle;
@@ -21,7 +22,11 @@ public class Book {
 
 
     //Class' constructor =====================================================================================
-    public Book(String title,
+    public Book (
+    LocalDate acquisitionDate, 
+    String supplier, 
+    LocalDate lastRevision,
+    String title,
      String subTitle,
      LocalDate publishedOn,
      LocalDate publishedAt,
@@ -36,6 +41,7 @@ public class Book {
      int numberPages,
      String coverType){
 
+        super(acquisitionDate, supplier, lastRevision);
         this.title = title;
         this.subTitle = subTitle;
         this.publishedOn = publishedOn;

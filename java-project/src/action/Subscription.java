@@ -91,18 +91,24 @@ public class Subscription {
         Scanner sc1 = new Scanner(System.in);
         int num = sc1.nextInt();
         int i = 0;
+        sc1.close();
 
         while(i<5){
             if (num != 5 && num != 15 && num != 20){
                 System.out.println("Invalid Number! Please select one of the following due dates: 5, 15, 20");
                 num = sc1.nextInt();
+                sc1.close();
                 i++;
                 if(i==4){
                     num = 5;
                 }
   
+            } else{
+                break;
             }
+            i++;
         }
+        
 
         return num;
 
