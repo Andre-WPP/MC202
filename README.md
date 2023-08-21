@@ -99,7 +99,8 @@ A class must have 4 elements:
 ## 3 - Project
 
 ### 3.1 - Class model:
-![image](https://github.com/Andre-WPP/MC322/assets/141690925/ccae4914-66f7-494a-8d82-82210164e1a8)
+![image](https://github.com/Andre-WPP/MC322/assets/141690925/82c70acb-4d67-4bb1-8fdd-a22cb775294a)
+
 
 
 ### 3.2 - Class Implementation:
