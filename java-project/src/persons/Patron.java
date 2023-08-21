@@ -3,6 +3,9 @@ package persons;
 import action.Borrow;
 import action.Incident;
 import action.Subscription;
+import util.Account;
+import util.Document;
+
 import java.time.LocalDate;
 
 public class Patron extends Person{
@@ -14,19 +17,16 @@ public class Patron extends Person{
    private LocalDate registeredOn;
    private boolean blocked;
    private Subscription subscription;
-   private CreditCard card[];
 
 
     //Class' constructor =====================================================================================
     public Patron(
-        String documentType, 
-        String docNumber, 
-        String cel, 
-        String email, 
-        String password, 
-        String name, 
-        String lastName, 
-        char gender, 
+        Document document,
+        String cel,
+        Account account,
+        String name,
+        String lastName,
+        char gender,
         String occupation, 
         int numberBorrow, 
         Borrow borrow[], 
@@ -34,10 +34,9 @@ public class Patron extends Person{
         Incident incident[], 
         LocalDate registeredOn, 
         boolean blocked, 
-        Subscription subscription, 
-        CreditCard card[]){
+        Subscription subscription){
             
-        super(documentType, docNumber, cel, email, password, name, lastName, gender, occupation);
+        super(document, cel, account, name, lastName, gender, occupation);
         this.numberBorrow = numberBorrow;
         this.borrow = borrow;
         this.numberIncident = numberIncident;
@@ -45,7 +44,6 @@ public class Patron extends Person{
         this.registeredOn =  registeredOn;
         this.blocked = blocked;
         this.subscription = subscription;
-        this.card = card;
     }
 
 
@@ -74,10 +72,6 @@ public class Patron extends Person{
         this.subscription = subscription;
     }
 
-    public void set_card(CreditCard card[]){
-        this.card = card;
-    }
-
     public int get_numberBorrow(){
         return numberBorrow;
     }
@@ -100,10 +94,6 @@ public class Patron extends Person{
 
     public Subscription get_subscription(){
         return subscription;
-    }
-
-    public CreditCard[] get_card(){
-        return card;
     }
 
     public LocalDate get_registeredOn(){

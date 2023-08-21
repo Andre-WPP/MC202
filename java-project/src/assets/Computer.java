@@ -1,12 +1,20 @@
 package assets;
 
-public class Computer {
+import java.time.LocalDate;
+
+public class Computer extends Asset{
    //Class' attributes ======================================================================================
     private String brand;
 
 
     //Class' constructor =====================================================================================
-    public Computer(String brand){
+    public Computer(        
+        LocalDate acquisitionDate,
+        String supplier,
+        LocalDate lastRevision,
+        String brand){
+
+        super(acquisitionDate, supplier, lastRevision);
         this.brand = brand;
 
     }

@@ -1,8 +1,10 @@
 package assets;
 
+import java.time.LocalDate;
+
 import items.Item;
 
-public class Shelf {
+public class Shelf extends Asset{
    //Class' attributes ======================================================================================
     private Item item[];
     private char startingLetter;
@@ -10,7 +12,16 @@ public class Shelf {
     private int maxCapacity;
 
     //Class' constructor =====================================================================================
-    public Shelf(Item item[], char startingLetter, char endingLetter, int maxCapacity){
+    public Shelf(        
+        LocalDate acquisitionDate,
+        String supplier,
+        LocalDate lastRevision,
+        Item item[], 
+        char startingLetter, 
+        char endingLetter, 
+        int maxCapacity){
+
+        super(acquisitionDate, supplier, lastRevision);
         this.item = item;
         this.startingLetter = startingLetter;
         this.endingLetter = endingLetter;

@@ -3,35 +3,26 @@ package action;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Scanner;
+import payments.Payment;
 
 public class Subscription {
    //Class' attributes ======================================================================================
     private String idSubscription;
-    private String type;
-    private float fee;
     private LocalDate startedOn;
     private int dueDate;
+    private Payment[] payment;
 
 
     //Class' constructor =====================================================================================
-    public Subscription(String type, LocalDate startedOn){
+    public Subscription(LocalDate startedOn, Payment[] payment){
         this.idSubscription = generateId();
-        this.type = type;
-        this.fee = setFee(type);
         this.startedOn = startedOn;
         this.dueDate = select_dueDate();
+        this.payment = payment;
     }
 
 
     //Getters and Setters ====================================================================================
-    public void set_type(String type){
-        this.type = type;
-    }
-
-    public void set_fee(String type){
-        this.fee = setFee(type);
-    }
-
     public void set_startedOn(LocalDate startedOn){
         this.startedOn = startedOn;
     }
@@ -40,16 +31,12 @@ public class Subscription {
         this.dueDate = select_dueDate();
     }
 
+    public void set_payment(Payment[] payment){
+        this.payment = payment;
+    }
+
     public String get_idSubscription(){
         return idSubscription;
-    }
-
-    public String get_type(){
-        return type;
-    }
-
-    public float get_fee(){
-        return fee;
     }
 
     public LocalDate get_startedOn(){
@@ -58,6 +45,10 @@ public class Subscription {
 
     public int get_dueDate(){
         return dueDate;
+    }
+
+    public Payment[] get_payment(){
+        return payment;
     }
 
 

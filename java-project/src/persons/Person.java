@@ -1,15 +1,14 @@
 package persons;
 
 import java.time.LocalDateTime;
+import util.*;
 
 public class Person {
    //Class' attributes ======================================================================================
     private String idPerson;
-    private String documentType;
-    private String docNumber;
+    private Document document;
     private String cel;
-    private String email;
-    private String password;
+    private Account account;
     private String name;
     private String lastName;
     private char gender;
@@ -17,13 +16,11 @@ public class Person {
 
 
     //Class' constructor =====================================================================================
-    public Person(String documentType, String docNumber, String cel, String email, String password, String name, String lastName, char gender, String occupation){
+    public Person(Document document, String cel,Account account, String name, String lastName, char gender, String occupation){
         this.idPerson = generateId();
-        this.documentType = documentType;
-        this.docNumber = docNumber;
+        this.document = document;
         this.cel = cel;
-        this.email = email;
-        this.password = password;
+        this.account = account;
         this.name = name;
         this.lastName = lastName;
         this.gender = gender;
@@ -38,8 +35,8 @@ public class Person {
         this.cel = cel;
     }
 
-    public void set_email(String email){
-        this.email = email;
+    public void set_document(Document document){
+        this.document = document;
     }
 
     public void set_lastName(String lastName){
@@ -50,24 +47,23 @@ public class Person {
         this.occupation = occupation;
     }
 
+    public void set_account(Account account){
+        this.account = account;
+    }
+
     public String get_idPerson(){
         return idPerson;
     }
 
-    public String get_documentType(){
-        return documentType;
+    public Document get_document(){
+        return document;
     }
-    public String get_docNumber(){
-        return docNumber;
-    }
+
     public String get_cel(){
         return cel;
     }
-    public String get_email(){
-        return email;
-    }
-    public String get_password(){
-        return password;
+    public Account get_account(){
+        return account;
     }
     public String get_name(){
         return name;

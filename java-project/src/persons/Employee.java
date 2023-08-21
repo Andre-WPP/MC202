@@ -3,8 +3,11 @@ package persons;
 import java.time.LocalDate;
 //import persons.Person;
 
+import util.Account;
+import util.Document;
+
 //extends Person
-public class Employee {
+public class Employee extends Person{
    //Class' attributes ======================================================================================
     private String level;
     private float salary;
@@ -15,8 +18,22 @@ public class Employee {
 
 
     //Class' constructor =====================================================================================
-    public Employee(String level, float salary, LocalDate startedOn, LocalDate lastVaccation, LocalDate firstHalfSalary, LocalDate secondHalfSalary){
-        //super();
+    public Employee(
+        Document document,
+        String cel,
+        Account account,
+        String name,
+        String lastName,
+        char gender,
+        String occupation, 
+        String level, 
+        float salary, 
+        LocalDate startedOn, 
+        LocalDate lastVaccation, 
+        LocalDate firstHalfSalary, 
+        LocalDate secondHalfSalary){
+
+        super(document, cel, account, name, lastName, gender, occupation);
         this.level = level;
         this.salary = salary;
         this.startedOn = startedOn;

@@ -1,9 +1,9 @@
-package persons;
+package payments;
 
 import java.time.LocalDateTime;
 import java.time.LocalDate;
 
-public class CreditCard {
+public class CreditCard extends Payment{
    //Class' attributes ======================================================================================
     private String idCard;
     private String cardName;
@@ -14,6 +14,7 @@ public class CreditCard {
 
     //Class' constructor =====================================================================================
     public CreditCard (String cardName, String cardNumber, String securityNumber, String printedName, LocalDate expirationDate){
+        super();
         this.idCard = generateId();
         this.cardName = cardName;
         this.cardNumber = cardNumber;
