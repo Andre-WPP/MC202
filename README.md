@@ -80,7 +80,7 @@ git rebase <to_branch> <from_branch>
 or to get all branch of commits
 
 ```
-git rebase -i <from_branch> <to_branch>
+git rebase -i <to_branch> <from_branch> 
 ``` 
 Note that rebase does not put to branch pointer at the top, it stacks "from branch" over "to branch".
 
@@ -93,8 +93,11 @@ git branch -f <from_branch> <to_branch>
 Another important command is:
 
 ```
-git cherry-pick 
-``` 
+git checkout <current_branch>
+git cherry-pick <branch_interest>
+```
+
+Git copies last commit of <branch_interest> to <current_branch> and moves poiter to the end.
 
 ## 2 - How to code in Java
 
