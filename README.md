@@ -71,6 +71,30 @@ git push
 ``` 
 
 ### 1.3 - Special cases: multiple branches.
+If you have multiple branches, it is important to know how to navigate among them and change commit orders.
+
+To put a commit in another branch, use the following command:
+```
+git rebase <to_branch> <from_branch>
+``` 
+or to get all branch of commits
+
+```
+git rebase -i <from_branch> <to_branch>
+``` 
+Note that rebase does not put to branch pointer at the top, it stacks "from branch" over "to branch".
+
+To put branch pointer at the latest commit use the command:
+
+```
+git branch -f <from_branch> <to_branch>
+```
+
+Another important command is:
+
+```
+git cherry-pick 
+``` 
 
 ## 2 - How to code in Java
 
