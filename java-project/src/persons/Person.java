@@ -6,9 +6,9 @@ import util.*;
 public class Person {
    //Class' attributes ======================================================================================
     private String idPerson;
-    private Document document;
+    private Document document; //Composition
     private String cel;
-    private Account account;
+    private Account account; //Composition
     private String name;
     private String lastName;
     private char gender;

@@ -1,4 +1,4 @@
-import java.time.LocalDateTime;
+
 import java.time.LocalDate;
 import persons.Patron;
 import action.Standard;
@@ -37,7 +37,7 @@ public class App {
         acc,
         "Ana",
         "Pessoa",
-        "F",
+        'F',
         "Estudante", 
         0, 
         br, 

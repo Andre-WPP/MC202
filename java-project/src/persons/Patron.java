@@ -11,12 +11,12 @@ import java.time.LocalDate;
 public class Patron extends Person{
    //Class' attributes ======================================================================================
    private int numberBorrow;
-   private Borrow borrow[];
+   private Borrow borrow[]; //Association
    private int numberIncident;
-   private Incident incident[];
+   private Incident incident[]; //Association
    private LocalDate registeredOn;
    private boolean blocked;
-   private Subscription subscription;
+   private Subscription subscription; //Composition
 
 
     //Class' constructor =====================================================================================

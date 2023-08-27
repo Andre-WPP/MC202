@@ -1,9 +1,8 @@
-package items;
+package assets.items;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
-public class Article {
+public class Article extends Item{
    //Class' attributes ======================================================================================
     private String title;
     private LocalDate publishedOn;
@@ -15,14 +14,18 @@ public class Article {
 
     //Class' constructor =====================================================================================
     public Article(
-     String title,
-     LocalDate publishedOn,
-     String author1,
-     String author2,
-     String language,
-     String mainDomain
+        LocalDate acquisitionDate, 
+        String supplier, 
+        LocalDate lastRevision, 
+        int qty,
+        String title,
+        LocalDate publishedOn,
+        String author1,
+        String author2,
+        String language,
+        String mainDomain
  ){
-
+        super(acquisitionDate, supplier, lastRevision, qty);
         this.title = title;
         this.publishedOn = publishedOn;
         this.author1 = author1;

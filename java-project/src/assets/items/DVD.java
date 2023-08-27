@@ -1,8 +1,8 @@
-package items;
+package assets.items;
 
 import java.time.LocalDate;
 
-public class DVD {
+public class DVD extends Item{
 //Class' attributes ======================================================================================
     private String title;
     private String gender;
@@ -15,13 +15,18 @@ public class DVD {
 
     //Class' constructor =====================================================================================
     public DVD (
-    String title,
-    String gender,
-    String category,
-    float duration,
-    String manufacturer,
-    LocalDate releasedOn,
-    String artist){
+        LocalDate acquisitionDate, 
+        String supplier, 
+        LocalDate lastRevision, 
+        int qty,
+        String title,
+        String gender,
+        String category,
+        float duration,
+        String manufacturer,
+        LocalDate releasedOn,
+        String artist){
+        super(acquisitionDate, supplier, lastRevision, qty);
         this.title = title;
         this.gender = gender;
         this.category = category;

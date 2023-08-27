@@ -1,12 +1,11 @@
 package assets;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 public class Table extends Asset{
    //Class' attributes ======================================================================================
     private int numberPlaces;
-    private Chair chair[];
+    private Chair chair[]; //Association
 
 
     //Class' constructor =====================================================================================

@@ -2,12 +2,12 @@ package action;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-import items.Item;
+import assets.items.Item;
 public class Borrow {
 
     //Class' attributes ======================================================================================
     private String idBorrow;
-    private Item item[];
+    private Item item[]; //Association
     private LocalDate borrowedOn;
     private LocalDate expectedGiveBackDate;
     private LocalDate giveItBackOn;

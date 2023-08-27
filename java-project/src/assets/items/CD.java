@@ -1,8 +1,8 @@
-package items;
+package assets.items;
 
 import java.time.LocalDate;
 
-public class CD {
+public class CD extends Item{
    //Class' attributes ======================================================================================
     private String title;
     private String gender;
@@ -15,13 +15,18 @@ public class CD {
 
     //Class' constructor =====================================================================================
     public CD (
-    String title,
-    String gender,
-    String category,
-    float duration,
-    String manufacturer,
-    LocalDate releasedOn,
-    String artist){
+        LocalDate acquisitionDate, 
+        String supplier, 
+        LocalDate lastRevision, 
+        int qty,
+        String title,
+        String gender,
+        String category,
+        float duration,
+        String manufacturer,
+        LocalDate releasedOn,
+        String artist){
+        super(acquisitionDate, supplier, lastRevision, qty);
         this.title = title;
         this.gender = gender;
         this.category = category;

@@ -12,8 +12,8 @@ public class Library {
     private int capacity;
     private int rating;
     private int qtyitems;
-    private Sector sector[];
-    private Employee employee[];
+    private Sector sector[]; //Composition
+    private Employee employee[]; //Agregation
 
 
     //Class' constructor =====================================================================================

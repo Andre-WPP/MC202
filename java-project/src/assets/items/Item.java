@@ -1,11 +1,20 @@
-package items;
+package assets.items;
 
-public class Item {
+import java.time.LocalDate;
+
+import assets.Asset;
+
+public class Item extends Asset{
    //Class' attributes ======================================================================================
     private int qty;
 
     //Class' constructor =====================================================================================
-    public Item(int qty){
+    public Item(
+        LocalDate acquisitionDate, 
+        String supplier, 
+        LocalDate lastRevision, 
+        int qty){
+        super(acquisitionDate, supplier, lastRevision);
         this.qty = qty;
 
     }

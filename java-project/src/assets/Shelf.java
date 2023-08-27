@@ -2,11 +2,11 @@ package assets;
 
 import java.time.LocalDate;
 
-import items.Item;
+import assets.items.Item;
 
 public class Shelf extends Asset{
    //Class' attributes ======================================================================================
-    private Item item[];
+    private Item item[]; //Association
     private char startingLetter;
     private char endingLetter;
     private int maxCapacity;

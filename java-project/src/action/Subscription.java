@@ -10,7 +10,7 @@ public class Subscription {
     private String idSubscription;
     private LocalDate startedOn;
     private int dueDate;
-    private Payment[] payment;
+    private Payment[] payment; //Composition
 
 
     //Class' constructor =====================================================================================
