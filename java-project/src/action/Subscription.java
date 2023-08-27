@@ -51,6 +51,9 @@ public class Subscription {
         return payment;
     }
 
+    public String get_type(){
+        return null;
+    };
 
     
 

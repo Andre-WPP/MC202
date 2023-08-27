@@ -27,6 +27,7 @@ public class Standard extends Subscription{
 
 
     //Getters and Setters ====================================================================================
+    @Override
     public String get_type(){
         return type;
     }
@@ -46,6 +47,8 @@ public class Standard extends Subscription{
     public boolean get_reservation(){
         return reservation;
     }
+
+
 
     
 

@@ -120,6 +120,9 @@ public class App {
             null
         );
 
+
+        System.out.println(Ana.get_subscription().get_type());
+
         Item it[] = new Item[1];
         it[0] = bk1;
         Borrow b1 = new Borrow(
