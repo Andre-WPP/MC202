@@ -7,7 +7,7 @@ public class Book extends Item {
     private String title;
     private String subTitle;
     private LocalDate publishedOn;
-    private LocalDate publishedAt;
+    private String publishedAt;
     private String publisher;
     private String edition;
     private String author1;
@@ -29,7 +29,7 @@ public class Book extends Item {
         String title,
         String subTitle,
         LocalDate publishedOn,
-        LocalDate publishedAt,
+        String publishedAt,
         String publisher,
         String edition,
         String author1,
@@ -76,7 +76,7 @@ public class Book extends Item {
 
     }
 
-    public void set_publishedAt(LocalDate publishedAt){
+    public void set_publishedAt(String publishedAt){
         this.publishedAt = publishedAt;
 
     }
@@ -145,7 +145,7 @@ public class Book extends Item {
 
     }
 
-    public LocalDate get_publishedAt(){
+    public String get_publishedAt(){
         return publishedAt;
 
     }
