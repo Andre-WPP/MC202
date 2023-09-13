@@ -1,7 +1,8 @@
-package main;
 
 import biblioteca.controllers.*;
 import biblioteca.models.*;
+import biblioteca.models.Items.MultimediaItemInterface;
+import biblioteca.models.Members.MemberInterface;
 import biblioteca.views.*;
 
 import java.util.List;
@@ -19,7 +20,7 @@ public class BibliotecaMain {
 
         BibliotecaView bibliotecaView = new BibliotecaViewImpl(bibliotecaController);
         MembroView membroView = new MembroViewImpl(membroController);
-        RelatorioView relatorioView = new RelatorioViewImpl(relatorioController);
+        //RelatorioView relatorioView = new RelatorioViewImpl(relatorioController);
 
         Scanner scanner = new Scanner(System.in);
         
@@ -49,7 +50,7 @@ public class BibliotecaMain {
                     break;
                 case 3:
                     // Menu de Geração de Relatórios e Estatísticas
-                    menuRelatoriosEstatisticas(scanner, relatorioView);
+                    //menuRelatoriosEstatisticas(scanner, relatorioView);
                     break;
                 case 4:
                     // Menu de Administração de Funcionários
@@ -86,7 +87,7 @@ public class BibliotecaMain {
 
             switch (opcaoItens) {
                 case 1:
-                    List<ItemMultimidia> itens = bibliotecaController.consultarItensDisponiveis();
+                    List<MultimediaItemInterface> itens = bibliotecaController.consultarItensDisponiveis();
                     bibliotecaView.mostrarItensDisponiveis(itens);
                     break;
                 case 2:
@@ -133,7 +134,7 @@ public class BibliotecaMain {
 
             switch (opcaoMembros) {
                 case 1:
-                    List<Membro> membros = membroController.listarMembros();
+                    List<MemberInterface> membros = membroController.listarMembros();
                     membroView.mostrarListaMembros(membros);
                     break;
                 case 2:

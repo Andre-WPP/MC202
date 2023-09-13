@@ -2,9 +2,9 @@ package biblioteca.views;
 
 import java.util.List;
 
-import biblioteca.models.Membro;
+import biblioteca.models.Members.MemberInterface;
 
 public interface MembroView {
-    void mostrarListaMembros(List<Membro> membros);
-    void mostrarDetalhesMembro(Membro membro);
+    void mostrarListaMembros(List<MemberInterface> membros);
+    void mostrarDetalhesMembro(MemberInterface membro);
 }

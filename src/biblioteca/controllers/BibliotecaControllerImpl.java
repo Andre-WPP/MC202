@@ -3,29 +3,29 @@ package biblioteca.controllers;
 import java.util.ArrayList;
 import java.util.List;
 
-import biblioteca.models.ItemMultimidia;
-import biblioteca.models.Membro;
+import biblioteca.models.Items.MultimediaItemInterface;
+import biblioteca.models.Members.MemberInterface;
 
 public class BibliotecaControllerImpl implements BibliotecaController {
-    private List<ItemMultimidia> itens;
+    private List<MultimediaItemInterface> itens;
 
     public BibliotecaControllerImpl() {
         itens = new ArrayList<>();
     }
 
     @Override
-    public List<ItemMultimidia> consultarItensDisponiveis() {
+    public List<MultimediaItemInterface> consultarItensDisponiveis() {
         return itens;
     }
 
     @Override
-    public boolean emprestarItem(Membro membro, ItemMultimidia item) {
+    public boolean emprestarItem(MemberInterface membro, MultimediaItemInterface item) {
         // Lógica de empréstimo
         return true;
     }
 
     @Override
-    public boolean devolverItem(Membro membro, ItemMultimidia item) {
+    public boolean devolverItem(MemberInterface membro, MultimediaItemInterface item) {
         // Lógica de devolução
         return true;
     }
